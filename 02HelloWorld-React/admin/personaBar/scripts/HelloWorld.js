@@ -1,11 +1,7 @@
 'use strict';
-define(['jquery',
-    '../scripts/config'
+define(['jquery'
 ],
-    function ($, cf) {
-        var utility;
-        var config = cf.init();
-
+    function ($) {
         function loadScript() {
             var url = "scripts/bundles/helloworld-bundle.js";
             $.ajax({
@@ -17,15 +13,6 @@ define(['jquery',
 
         return {
             init: function (wrapper, util, params, callback) {
-                utility = util;
-
-
-                window.dnn.initHelloWorld = function () {
-                    return {
-                        utility: utility,
-                        moduleName: 'HelloWorld'
-                    };
-                };
                 loadScript();
             },
 
