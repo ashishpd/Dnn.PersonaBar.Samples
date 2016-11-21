@@ -1,6 +1,5 @@
 'use strict';
-define(['jquery'
-],
+define(['jquery'],
     function ($) {
         function loadScript() {
             var url = "scripts/bundles/helloworld-bundle.js";
