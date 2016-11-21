@@ -8,7 +8,7 @@ class Root extends Component {
     }
     render() {
         return (
-            <div className="helloworld-Root">
+            <div>
                 <App />
                 <DevTools />
             </div>

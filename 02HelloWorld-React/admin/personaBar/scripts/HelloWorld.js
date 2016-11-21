@@ -20,7 +20,7 @@ define(['jquery',
                 utility = util;
 
 
-                window.dnn.initHelloWorld = function initHelloWorld() {
+                window.dnn.initHelloWorld = function () {
                     return {
                         utility: utility,
                         moduleName: 'HelloWorld'
