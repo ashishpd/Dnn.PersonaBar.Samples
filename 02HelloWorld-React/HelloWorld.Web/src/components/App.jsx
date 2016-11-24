@@ -1,15 +1,9 @@
-import React, {Component, PropTypes} from "react";
-import { connect } from "react-redux";
+import React, {Component} from "react";
 import SocialPanelHeader from "dnn-social-panel-header";
 import PersonaBarPage from "dnn-persona-bar-page";
 
 class App extends Component {
-    constructor() {
-        super();
-    }
-    
     render() {
-        const {props} = this;
         return (
             <div>
                 <PersonaBarPage isOpen="true">
@@ -21,7 +15,4 @@ class App extends Component {
     }
 }
 
-
-
-
-export default (App);
+export default App;
