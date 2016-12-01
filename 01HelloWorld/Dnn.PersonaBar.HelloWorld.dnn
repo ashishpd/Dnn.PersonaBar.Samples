@@ -20,7 +20,7 @@
             <components>
                 <component type="ResourceFile">
                     <resourceFiles>
-                        <basePath>DesktopModules/admin/Dnn.PersonaBar</basePath>
+                        <basePath>DesktopModules/admin/Dnn.PersonaBar/Modules/HelloWorld</basePath>
                         <resourceFile>
                             <name>Resources.zip</name>
                         </resourceFile>

@@ -2,7 +2,7 @@
 define(['jquery'],
     function ($) {
         function loadScript() {
-            var url = "scripts/bundles/helloworld-bundle.js";
+            var url = "Modules/HelloWorld/scripts/bundles/helloworld-bundle.js";
             $.ajax({
                 dataType: "script",
                 cache: true,
