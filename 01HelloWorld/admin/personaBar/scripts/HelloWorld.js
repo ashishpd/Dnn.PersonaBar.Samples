@@ -1,7 +1,6 @@
 'use strict';
-define(['../../../scripts/config'
-],
-    function (cf) {
+define(
+    function () {
 
         return {
             init: function (wrapper, util, params, callback) {
