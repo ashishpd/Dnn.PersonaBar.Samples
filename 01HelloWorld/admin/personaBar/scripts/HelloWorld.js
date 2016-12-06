@@ -1,5 +1,5 @@
 'use strict';
-define(['../scripts/config'
+define(['../../../scripts/config'
 ],
     function (cf) {
 
