@@ -95,7 +95,7 @@ class AddUser extends Component {
     }
 
     onCancel() {
-        util.confirm("This user hasn't been created, are you sure you want to cancel your changes?", "Yes", "No", () => {
+        util.confirm(Localization.get("UnsavedChanges.Warning"), Localization.get("Yes.Button"), Localization.get("No.Button"), () => {
             this.props.dispatch(UserActions.clearNewUser());
         });
     }
@@ -126,7 +126,7 @@ class AddUser extends Component {
                             label={Localization.get("Authorized.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.authorize.value}
-                            onChange={this.onChange.bind(this, "authorized")}
+                            onChange={this.onChange.bind(this, "authorize")}
                             />
                         {!randomPassword && <SingleLineInputWithError
                             label={Localization.get("Password.Label")}

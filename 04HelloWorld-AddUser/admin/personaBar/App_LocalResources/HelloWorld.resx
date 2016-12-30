@@ -150,6 +150,9 @@
   <data name="LastName.Label" xml:space="preserve">
     <value>Last Name:</value>
   </data>
+  <data name="No.Button" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="Password.Label" xml:space="preserve">
     <value>Password:</value>
   </data>
@@ -161,5 +164,8 @@
   </data>
   <data name="UserName.Label" xml:space="preserve">
     <value>User Name:</value>
+  </data>
+  <data name="Yes.Button" xml:space="preserve">
+    <value>Yes</value>
   </data>
 </root>
