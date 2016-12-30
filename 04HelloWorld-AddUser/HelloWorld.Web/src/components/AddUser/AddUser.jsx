@@ -6,6 +6,7 @@ import SingleLineInputWithError from "dnn-single-line-input-with-error";
 import UserActions from "actions/UserActions";
 import Switch from "dnn-switch";
 import Button from "dnn-button";
+import Localization from "localization";
 import util from "utils";
 import styles from "./AddUser.less";
 
@@ -106,7 +107,7 @@ class AddUser extends Component {
                 <GridSystem>
                     <GridCell>
                         <SingleLineInputWithError
-                            label="First Name: "
+                            label={Localization.get("FirstName.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.firstName.value}
                             error={newUserRegistrationDetails && triedToSave && newUserRegistrationDetails.firstName.error}
@@ -114,7 +115,7 @@ class AddUser extends Component {
                             tabIndex={1}
                             />
                         <SingleLineInputWithError
-                            label="User Name: "
+                            label={Localization.get("UserName.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.userName.value}
                             error={newUserRegistrationDetails && triedToSave && newUserRegistrationDetails.userName.error}
@@ -122,13 +123,13 @@ class AddUser extends Component {
                             tabIndex={3}
                             />
                         <Switch
-                            label="Authorized: "
+                            label={Localization.get("Authorized.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.authorize.value}
                             onChange={this.onChange.bind(this, "authorized")}
                             />
                         {!randomPassword && <SingleLineInputWithError
-                            label="Password: "
+                            label={Localization.get("Password.Label")}
                             style={inputStyle}
                             type="password"
                             value={newUserRegistrationDetails && newUserRegistrationDetails.password.value}
@@ -140,7 +141,7 @@ class AddUser extends Component {
                     </GridCell>
                     <GridCell>
                         <SingleLineInputWithError
-                            label="Last Name: "
+                            label={Localization.get("LastName.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.lastName.value}
                             error={newUserRegistrationDetails && triedToSave && newUserRegistrationDetails.lastName.error}
@@ -148,7 +149,7 @@ class AddUser extends Component {
                             tabIndex={2}
                             />
                         <SingleLineInputWithError
-                            label="Email Address: "
+                            label={Localization.get("EmailAddress.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.email.value}
                             error={newUserRegistrationDetails && triedToSave && newUserRegistrationDetails.email.error}
@@ -156,13 +157,13 @@ class AddUser extends Component {
                             tabIndex={4}
                             />
                         <Switch
-                            label="Random Password: "
+                            label={Localization.get("RandomPassword.Label")}
                             style={inputStyle}
                             value={newUserRegistrationDetails && newUserRegistrationDetails.randomPassword.value}
                             onChange={this.onChange.bind(this, "randomPassword")}
                             />
                         {!randomPassword && <SingleLineInputWithError
-                            label="Confirm Password: "
+                            label={Localization.get("ConfirmPassword.Label")}
                             style={inputStyle}
                             type="password"
                             value={newUserRegistrationDetails && newUserRegistrationDetails.confirmPassword.value}
@@ -174,8 +175,8 @@ class AddUser extends Component {
                     </GridCell>
                 </GridSystem>
                 <GridCell className="add-user-footer">
-                    <Button type="secondary" onClick={this.onCancel.bind(this)}>Cancel</Button>
-                    <Button type="primary" onClick={this.onAddUser.bind(this)}>Save</Button>
+                    <Button type="secondary" onClick={this.onCancel.bind(this)}>{Localization.get("Cancel.Button")}</Button>
+                    <Button type="primary" onClick={this.onAddUser.bind(this)}>{Localization.get("AddUser.Button")}</Button>
                 </GridCell>
             </GridCell>
         );

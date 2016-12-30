@@ -129,4 +129,37 @@
   <data name="UserName.Header" xml:space="preserve">
     <value>User Name</value>
   </data>
+  <data name="AddUser.Button" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="Authorized.Label" xml:space="preserve">
+    <value>Authorized:</value>
+  </data>
+  <data name="Cancel.Button" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfirmPassword.Label" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="EmailAddress.Label" xml:space="preserve">
+    <value>Email Address:</value>
+  </data>
+  <data name="FirstName.Label" xml:space="preserve">
+    <value>First Name:</value>
+  </data>
+  <data name="LastName.Label" xml:space="preserve">
+    <value>Last Name:</value>
+  </data>
+  <data name="Password.Label" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="RandomPassword.Label" xml:space="preserve">
+    <value>Random Password:</value>
+  </data>
+  <data name="UnsavedChanges.Warning" xml:space="preserve">
+    <value>You have unsaved changes. Are you sure you want to proceed?</value>
+  </data>
+  <data name="UserName.Label" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
 </root>
