@@ -1,0 +1,22 @@
+@import "~dnn-global-styles/index";
+:local(.usersTable) {
+    box-sizing: border-box;
+    padding: 35px 25px;
+    * {
+        box-sizing: border-box;
+    }
+    .header-row {
+        border: 1px solid @alto;
+        border-bottom: none;
+    }
+    .user-detail-row {
+        border: 1px solid @alto;
+        border-bottom: none;
+        &:last-child {
+            border-bottom: 1px solid @alto;
+        }
+        > .dnn-grid-cell {
+            padding: 15px;
+        }
+    }
+}
