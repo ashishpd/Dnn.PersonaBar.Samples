@@ -106,3 +106,4 @@ node_modules
 npm-debug.log
 
 [Ww]ebsite/
+/.vs/slnx.sqlite
