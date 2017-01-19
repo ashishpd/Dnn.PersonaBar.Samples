@@ -85,11 +85,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="License.txt" />
+    <Content Include="ReleaseNotes.txt" />
+    <Content Include="scripts\helloworld-bundle.js" />
+    <Content Include="Settings.ascx" />
+    <Content Include="View.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dnn.Modules.HelloWorld.dnn" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Module.build" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
