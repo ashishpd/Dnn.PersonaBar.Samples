@@ -1,0 +1,28 @@
+@import "~dnn-global-styles/index";
+:local(.addUser) {
+    padding: 35px 25px;
+    .dnn-switch-container {
+        width: 100%;
+        .dnn-switch {
+            float: right;
+        }
+    }
+    .dnn-grid-system {
+        > .dnn-grid-cell {
+            &:first-child {
+                border-right: 1px solid @alto;
+                padding-right: 15px;
+            }
+            &:last-child {
+                padding-left: 15px;
+            }
+        }
+    }
+    .add-user-footer{
+        text-align: center;
+        margin: 25px auto 0;
+        .dnn-ui-common-button{
+            margin-left: 11px;
+        }
+    }
+}
