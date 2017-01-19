@@ -13,17 +13,11 @@ function serializeQueryStringParameters(obj) {
 class UserService {
     getServiceFramework() {
         let sf = util.sf;
-        sf.init("PersonaBar", "Users");
         return sf;
     }
-    getUsers(searchParameters, callback, errorCallback) {
+    getData(callback, errorCallback) {
         const sf = this.getServiceFramework();
-
-        sf.get("GetUsers?" + serializeQueryStringParameters(searchParameters), {}, callback, errorCallback);
-    }
-    createUser(userDetails, callback, errorCallback) {
-        const sf = this.getServiceFramework("Users");
-        sf.post("CreateUser", userDetails, callback, errorCallback);
+        sf.get({}, callback, errorCallback);
     }
 }
 const userService = new UserService();

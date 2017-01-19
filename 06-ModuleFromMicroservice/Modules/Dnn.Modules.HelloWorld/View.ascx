@@ -2,11 +2,8 @@
 
 <div id="helloworld-container<%= ModuleId %>"></div>
 <script>
-    var ModuleId = <%= ModuleId %>;
     var currentUserCanView = "<%= userCanView %>";
     if (currentUserCanView === "True") {
-	    var sf = $.ServicesFramework(ModuleId);
-		console.log(sf);
         function loadScript() {
             //var url = "http://localhost:8080/dist/helloworld-bundle.js";
             var url = "/DesktopModules/HelloWorld/scripts/helloworld-bundle.js";
@@ -18,28 +15,20 @@
         }
 	
 	    var _sf = {
-		    serviceRoot: "",
-		    controller: "",
-		    init: function(serviceRoot, controller){
-			    this.serviceRoot = serviceRoot;
-			    this.controller = controller;
-		    },
-		    get: function(endPointUrl, data, callback, errorCallback){
+		    get: function(data, callback, errorCallback){
 			    $.ajax({
-				    url: sf.getServiceRoot(this.serviceRoot) + this.controller + "/" + endPointUrl,
+				    url: 'http://webapplication120170119093536.azurewebsites.net/api/values',
 				    type: "GET",
 				    data: data,
-				    beforeSend: sf.setModuleHeaders,
 				    success: callback,
 				    failure: errorCallback
 			    });
 		    },
-		    post: function(endPointUrl, data, callback, errorCallback){
+		    post: function(data, callback, errorCallback){
 			    $.ajax({
-				    url: sf.getServiceRoot(this.serviceRoot) + this.controller + "/" + endPointUrl,
+				    url: 'http://webapplication120170119093536.azurewebsites.net/api/values',
 				    type: "POST",
 				    data: data,
-				    beforeSend: sf.setModuleHeaders,
 				    success: callback,
 				    failure: errorCallback
 			    });

@@ -20,7 +20,6 @@ class HeaderRow extends Component {
 }
 
 HeaderRow.propTypes = {
-    headers: PropTypes.array.isRequired
 };
 
 

@@ -1,6 +1,7 @@
 import utilities from "../utils";
 const helloworld = {
     init() {
+        console.log("InIt");
         // This setting is required and define the public path 
         // to allow the web application to download assets on demand 
         // eslint-disable-next-line no-undef
