@@ -10,6 +10,7 @@
         function loadScript() {
             //var url = "http://localhost:8080/dist/helloworld-bundle.js";
             var url = "/DesktopModules/HelloWorld/scripts/helloworld-bundle.js";
+            var api = "http://localhost:52430/api/values";
             $.ajax({
                 dataType: "script",
                 cache: true,

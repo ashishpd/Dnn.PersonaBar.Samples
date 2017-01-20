@@ -5,8 +5,9 @@
     var currentUserCanView = "<%= userCanView %>";
     if (currentUserCanView === "True") {
         function loadScript() {
+            var url = "http://webapplication120170119093536.azurewebsites.net/helloworld-bundle.js";
             //var url = "http://localhost:8080/dist/helloworld-bundle.js";
-            var url = "/DesktopModules/HelloWorld/scripts/helloworld-bundle.js";
+            //var url = "/DesktopModules/HelloWorld/scripts/helloworld-bundle.js";
             $.ajax({
                 dataType: "script",
                 cache: true,

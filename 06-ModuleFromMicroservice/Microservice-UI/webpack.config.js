@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV === "production";
 module.exports = {
     entry: "./src/main.jsx",
     output: {
-        path: "../scripts",
+        path: "../Microservice-API/wwwroot",
         filename: "helloworld-bundle.js",
         publicPath: isProduction ? "" : "http://localhost:8080/dist/"
     },

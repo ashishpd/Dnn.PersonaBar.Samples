@@ -87,7 +87,6 @@
   <ItemGroup>
     <Content Include="License.txt" />
     <Content Include="ReleaseNotes.txt" />
-    <Content Include="scripts\helloworld-bundle.js" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
   </ItemGroup>
